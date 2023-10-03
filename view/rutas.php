@@ -1,6 +1,9 @@
 <?php
 
+/*Por medio de metodos propios de php se lee la url para convertirla en un array y por cada posicion
+se va a distinguir de cada peticion, segun el valor contenido como cadena de valores o numerico
 
+*/
 // lectura del array de la URL 
 $arrayRutas = explode("/", $_SERVER['REQUEST_URI']);
 
