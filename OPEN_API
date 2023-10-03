@@ -1,0 +1,19 @@
+#Las peticiones se pueden realizar desde la extension Thunder cliente del VSC
+
+# Peticion Get para traer todos los cursos de la bd -> http://localhost/api-rest/index.php/cursos
+
+
+#Para realizar registros solo se puede realizar con los credenciales id_cliente y llave_secreta por medio del 
+#thunder client en auth -> basic. Una vez diligenciado estos dos campos, se debe de crear el body con los campos de
+# la bd y poner los datos del nuevo cliente o curso
+#Peticion Post para crear nuevo cliente desde el campo form-encode y diligenciando 
+#el formulario con los campos de la base de datos (nombreBD->nombre, apellidoBD->apellido, emailBD->email) -> http://localhost/api-rest/index.php/registro
+
+#Peticion Post para crear nuevo curso desde los campos de form-encode -> http://localhost/api-rest/index.php/cursos.
+
+#Peticion PUT para realizar un update se debe validar primero los credenciales id_cliente y llave_secreta y diligenciar
+#el formulario form-encode con los datos actuales del registro del curso 87(ejemplo) y se modifica alguno de estos valores
+#para pasar las validaciones->#http://localhost/api-rest/index.php/cursos/87
+
+#Peticion delete para realizar un delete de un registro no se requiere diligenciar form-encode del body. Hay que
+#validar los credenciales de id_cliente y llave_secreta  -> http://localhost/api-rest/index.php/cursos/88
